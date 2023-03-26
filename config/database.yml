@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: mtg_demo_production
-  username: mtg_demo
-  password: <%= ENV["MTG_DEMO_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
