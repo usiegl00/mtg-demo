@@ -1,6 +1,6 @@
 class AntimonyMailer < ApplicationMailer
-  default :from     => "rails@mtg.antimony.io",
-          :reply_to => "support@antimony.io"
+  default :from     => "Support <rails@mtg.antimony.io>",
+          :reply_to => "Support <support@antimony.io>"
 
   def send_email(to:)
     mail(to: to)

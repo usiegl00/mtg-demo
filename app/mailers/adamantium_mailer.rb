@@ -1,6 +1,6 @@
 class AdamantiumMailer < ApplicationMailer
-  default :from     => "rails@mtg.adamantium.io",
-          :reply_to => "support@adamantium.io"
+  default :from     => "Support <rails@mtg.adamantium.io>",
+          :reply_to => "Support <support@adamantium.io>"
 
   def send_email(to:)
     mail(to: to)
